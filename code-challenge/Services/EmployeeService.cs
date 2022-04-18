@@ -1,10 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using challenge.Models;
-using Microsoft.Extensions.Logging;
+﻿using challenge.Models;
 using challenge.Repositories;
+using Microsoft.Extensions.Logging;
+using System;
 
 namespace challenge.Services
 {
@@ -21,7 +18,7 @@ namespace challenge.Services
 
         public Employee Create(Employee employee)
         {
-            if(employee != null)
+            if (employee != null)
             {
                 _employeeRepository.Add(employee);
                 _employeeRepository.SaveAsync().Wait();
@@ -32,7 +29,8 @@ namespace challenge.Services
 
         public Employee GetById(string id)
         {
-            if(!String.IsNullOrEmpty(id))
+            _logger.LogInformation(nameof(EmployeeService) + "GetById" + id);
+            if (!String.IsNullOrEmpty(id))
             {
                 return _employeeRepository.GetById(id);
             }
@@ -42,16 +40,14 @@ namespace challenge.Services
 
         public Employee Replace(Employee originalEmployee, Employee newEmployee)
         {
-            if(originalEmployee != null)
+            if (originalEmployee != null)
             {
                 _employeeRepository.Remove(originalEmployee);
                 if (newEmployee != null)
                 {
-                    // ensure the original has been removed, otherwise EF will complain another entity w/ same id already exists
                     _employeeRepository.SaveAsync().Wait();
 
                     _employeeRepository.Add(newEmployee);
-                    // overwrite the new id with previous employee id
                     newEmployee.EmployeeId = originalEmployee.EmployeeId;
                 }
                 _employeeRepository.SaveAsync().Wait();
@@ -59,5 +55,22 @@ namespace challenge.Services
 
             return newEmployee;
         }
+
+        public ReportingStructure GetReportingStructure(Employee employee)
+        {
+            return new ReportingStructure() { Employee = employee, NumberOfReports = GetNumberOfReports(employee) };
+        }
+
+        private int GetNumberOfReports(Employee employee)
+        {
+            if (employee == null || employee.DirectReports == null) { return 0; }
+            int total = employee.DirectReports.Count;
+            foreach (Employee report in employee.DirectReports)
+            {
+                total += GetNumberOfReports(report);
+            }
+            return total;
+        }
+
     }
 }

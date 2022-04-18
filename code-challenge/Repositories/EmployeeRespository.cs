@@ -1,11 +1,10 @@
-﻿using System;
+﻿using challenge.Data;
+using challenge.Models;
+using Microsoft.Extensions.Logging;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using challenge.Models;
-using Microsoft.Extensions.Logging;
-using Microsoft.EntityFrameworkCore;
-using challenge.Data;
 
 namespace challenge.Repositories
 {
@@ -29,7 +28,8 @@ namespace challenge.Repositories
 
         public Employee GetById(string id)
         {
-            return _employeeContext.Employees.SingleOrDefault(e => e.EmployeeId == id);
+            IEnumerable<Employee> employee = _employeeContext.Employees.AsEnumerable().Where(e => e.EmployeeId == id);
+            return employee.SingleOrDefault();
         }
 
         public Task SaveAsync()

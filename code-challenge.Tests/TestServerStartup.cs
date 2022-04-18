@@ -27,21 +27,29 @@ namespace code_challenge.Tests.Integration
             {
                 options.UseInMemoryDatabase("EmployeeDB");
             });
-            services.AddScoped<IEmployeeRepository,EmployeeRespository>();
+            services.AddDbContext<CompensationContext>(options =>
+            {
+                options.UseInMemoryDatabase("CompensationDB");
+            });
+            services.AddScoped<ICompensationRepository, CompensationRepository>();
+            services.AddScoped<IEmployeeRepository, EmployeeRespository>();
             services.AddTransient<EmployeeDataSeeder>();
+            services.AddTransient<CompensationDataSeeder>();
             services.AddScoped<IEmployeeService, EmployeeService>();
+            services.AddScoped<ICompensationService, CompensationService>();
             services.AddMvc();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory, EmployeeDataSeeder seeder)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory, EmployeeDataSeeder employeeDataSeeder, CompensationDataSeeder compensationDataSeeder)
         {
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
-                seeder.Seed().Wait();
+                employeeDataSeeder.Seed().Wait();
+                compensationDataSeeder.Seed().Wait();
             }
-            
+
             app.UseMvc();
 
         }

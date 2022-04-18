@@ -17,7 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="wwwroot\" />
+    <Compile Remove="Services\IReportingService.cs" />
+    <Compile Remove="Services\ReportingService.cs" />
   </ItemGroup>
-
 </Project>

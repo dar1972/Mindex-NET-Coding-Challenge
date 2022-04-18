@@ -1,0 +1,20 @@
+﻿[
+  {
+    "Id": "5DEAC8EF-B68E-49C2-88C4-3879B19898AA",
+    "EmployeeId": "16a596ae-edd3-4847-99fe-c4518e82c86f",
+    "Salary": "110000",
+    "EffectiveDate": "2020-09-23T18:25:43.000Z"
+  },
+  {
+    "Id": "0F768617-3B26-4B37-A69C-E475876854E7",
+    "EmployeeId": "16a596ae-edd3-4847-99fe-c4518e82c86f",
+    "Salary": "99999",
+    "EffectiveDate": "2021-05-23T18:25:43.000Z"
+  },
+  {
+    "Id": "1C5C6A31-23A4-4053-8973-172302F55140",
+    "EmployeeId": "D9BA34D5-6574-468D-BCF4-C5E39CF0A5FC",
+    "Salary": "110000",
+    "EffectiveDate": "2020-03-23T18:25:43.000Z"
+  }
+]
