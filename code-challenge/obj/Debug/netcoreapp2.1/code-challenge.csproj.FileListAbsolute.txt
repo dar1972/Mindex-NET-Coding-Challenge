@@ -1,0 +1,17 @@
+/Users/dhruv/Downloads/sr-code-challenge-dotnet/code-challenge/bin/Debug/netcoreapp2.1/appsettings.Development.json
+/Users/dhruv/Downloads/sr-code-challenge-dotnet/code-challenge/bin/Debug/netcoreapp2.1/appsettings.json
+/Users/dhruv/Downloads/sr-code-challenge-dotnet/code-challenge/bin/Debug/netcoreapp2.1/resources/EmployeeSeedData.json
+/Users/dhruv/Downloads/sr-code-challenge-dotnet/code-challenge/bin/Debug/netcoreapp2.1/code-challenge.deps.json
+/Users/dhruv/Downloads/sr-code-challenge-dotnet/code-challenge/bin/Debug/netcoreapp2.1/code-challenge.runtimeconfig.json
+/Users/dhruv/Downloads/sr-code-challenge-dotnet/code-challenge/bin/Debug/netcoreapp2.1/code-challenge.runtimeconfig.dev.json
+/Users/dhruv/Downloads/sr-code-challenge-dotnet/code-challenge/bin/Debug/netcoreapp2.1/code-challenge.dll
+/Users/dhruv/Downloads/sr-code-challenge-dotnet/code-challenge/bin/Debug/netcoreapp2.1/code-challenge.pdb
+/Users/dhruv/Downloads/sr-code-challenge-dotnet/code-challenge/obj/Debug/netcoreapp2.1/code-challenge.csproj.AssemblyReference.cache
+/Users/dhruv/Downloads/sr-code-challenge-dotnet/code-challenge/obj/Debug/netcoreapp2.1/code-challenge.GeneratedMSBuildEditorConfig.editorconfig
+/Users/dhruv/Downloads/sr-code-challenge-dotnet/code-challenge/obj/Debug/netcoreapp2.1/code-challenge.AssemblyInfoInputs.cache
+/Users/dhruv/Downloads/sr-code-challenge-dotnet/code-challenge/obj/Debug/netcoreapp2.1/code-challenge.AssemblyInfo.cs
+/Users/dhruv/Downloads/sr-code-challenge-dotnet/code-challenge/obj/Debug/netcoreapp2.1/code-challenge.csproj.CoreCompileInputs.cache
+/Users/dhruv/Downloads/sr-code-challenge-dotnet/code-challenge/obj/Debug/netcoreapp2.1/code-challenge.dll
+/Users/dhruv/Downloads/sr-code-challenge-dotnet/code-challenge/obj/Debug/netcoreapp2.1/code-challenge.pdb
+/Users/dhruv/Downloads/sr-code-challenge-dotnet/code-challenge/obj/Debug/netcoreapp2.1/code-challenge.genruntimeconfig.cache
+/Users/dhruv/Downloads/sr-code-challenge-dotnet/code-challenge/bin/Debug/netcoreapp2.1/resources/CompensationSeedData.json

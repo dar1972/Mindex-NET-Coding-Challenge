@@ -1,0 +1,30 @@
+﻿<Properties GitUserInfo="UsingGIT" StartupConfiguration="{8ABA1EEA-DF6D-43B9-9F23-4E8C234A5ABF}|Default">
+  <MonoDevelop.Ide.ItemProperties.code-challenge PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.Workbench>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="code-challenge" expanded="True">
+            <Node name="code-challenge" expanded="True" selected="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Properties" expanded="True" />
+              <Node name="Repositories" expanded="True" />
+              <Node name="resources" expanded="True" />
+              <Node name="Services" expanded="True" />
+            </Node>
+            <Node name="code-challenge.Tests.Integration" expanded="True">
+              <Node name="resources" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
